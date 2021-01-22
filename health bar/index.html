@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <meter id="health" min="0" max="100" value="100"></meter>      
+        <input  id="button" type= "button" value="aanvallen"></input>
+        <link rel="stylesheet" href="healthbar.css">
+        <h1 id="schade">..</h1>
+        
+        <script>
+                let mijnButton = document.getElementById('button');
+                let meter = document.getElementById('health');
+                let health = meter.value;
+                mijnButton.addEventListener('click' , () =>{
+                    console.log(health)
+                    health = health -5;
+                    meter.value = health;
+                    if (health == 0)  {
+                        document.getElementById('schade').innerHTML = "Dead"
+                    }
+                
+            
+            });       
+        </script>
+    </body>
+</html>
