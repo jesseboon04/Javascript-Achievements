@@ -28,6 +28,7 @@
     
 
     function makeThisSentence(){
+
         let index1 = randomizer(arrayLength);
         let woord1 = onderwerp[index1]; 
 
@@ -36,6 +37,7 @@
 
         let index3 = randomizer(restwoordLenght)
         let woord3 = restwoord[index3];
+
         let outputString = woord1 + " " + woord2 + " " + woord3;
         return outputString;   
     }
